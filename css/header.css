@@ -1,0 +1,46 @@
+/* style.css */
+
+/* General Styling */
+header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Top Header */
+.top-header .navbar-brand span {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.search-bar .custom-select {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.search-bar .form-control {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.icons i {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+    background-color: #001f54; /* Dark blue */
+}
+
+.bottom-nav .nav-link {
+    color: white !important;
+}
+
+.bottom-nav .nav-link:hover {
+    color: #ffcc00 !important; /* Optional highlight color */
+}
+
+.bottom-nav .btn-warning {
+    background-color: #ffcc00;
+    color: #001f54;
+    font-weight: bold;
+}

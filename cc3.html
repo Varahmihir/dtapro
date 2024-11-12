@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.84.0">
+        <title>Carousel Template · Bootstrap v5.0</title>
+    
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#7952b3">
+    
+        
+        
+        
+        <style>
+            .carousal-inner .carousal-item.active, .carousel-inner .carousel-item-start,
+            .carousel-inner .carousel-item-next,.carousel-inner .carousel-item-prev{
+                display: flex;
+            }
+        </style>
+      </head>
+<body>
+   
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        
+        <div class="carousel-inner w-100 d-flex">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <div class="container col-md-3">
+                    <div class="product-card card me-3 d-block" width="200px" aria-label="slide-1">
+                        <div class="badge bg-dark position-absolute top-0 start-0 mb-2">Best seller</div>
+                        <img class="d-block w-100" width="100px" src="https://images.pexels.com/photos/557659/pexels-photo-557659.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">#111</h6>
+                            <h4 class="card-title">Avacado1</h4>
+                            <p class="price">₹23</p>
+                            <div class="d-flex align-items-center">
+                                <button class="btn btn-outline-secondary me-2">-</button>
+                                <input type="text" class="form-control text-center quantity " style="width: 40px;" placeholder="0">
+                                <button class="btn btn-outline-secondary ms-2">+</button>
+    
+                            </div>
+                            <p class="in-stock text-muted mt-2">In stock: 120</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="carousel-item "data-bs-interval="2000">
+                <div class="container col-md-3">
+                    <div class="product-card card me-3 d-block" width="200px" aria-label="slide-2">
+                        <div class="badge bg-dark position-absolute top-0 start-0 mb-2">Best seller</div>
+                        <img class="d-block w-100" width="100px" src="https://th.bing.com/th?id=OIP.lX4-X-mjkQ3TY4geXBuv7AHaE5&w=307&h=203&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">#222</h6>
+                            <h4 class="card-title">mango</h4>
+                            <p class="price">₹23</p>
+                            <div class="d-flex align-items-center">
+                                <button class="btn btn-outline-secondary me-2">-</button>
+                                <input type="text" class="form-control text-center quantity " style="width: 40px;" placeholder="0">
+                                <button class="btn btn-outline-secondary ms-2">+</button>
+    
+                            </div>
+                            <p class="in-stock text-muted mt-2">In stock: 120</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item "data-bs-interval="2000">
+                <div class="container col-md-3">
+                    <div class="product-card card me-3 d-block" width="200px" aria-label="slide-3">
+                        <div class="badge bg-dark position-absolute top-0 start-0 mb-2">Best seller</div>
+                        <img class="d-block w-100" width="100px" src="https://images.pexels.com/photos/2316466/pexels-photo-2316466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">#333</h6>
+                            <h4 class="card-title">banana</h4>
+                            <p class="price">₹23</p>
+                            <div class="d-flex align-items-center">
+                                <button class="btn btn-outline-secondary me-2">-</button>
+                                <input type="text" class="form-control text-center quantity " style="width: 40px;" placeholder="0">
+                                <button class="btn btn-outline-secondary ms-2">+</button>
+    
+                            </div>
+                            <p class="in-stock text-muted mt-2">In stock: 120</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item "data-bs-interval="2000">
+                <div class="container col-md-3">
+                    <div class="product-card card me-3 d-block" width="200px" aria-label="slide-4">
+                        <div class="badge bg-dark position-absolute top-0 start-0 mb-2">Best seller</div>
+                        <img class="d-block w-100" width="100px" src="https://images.pexels.com/photos/1098537/pexels-photo-1098537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">#444</h6>
+                            <h4 class="card-title">grapes</h4>
+                            <p class="price">₹23</p>
+                            <div class="d-flex align-items-center">
+                                <button class="btn btn-outline-secondary me-2">-</button>
+                                <input type="text" class="form-control text-center quantity " style="width: 40px;" placeholder="0">
+                                <button class="btn btn-outline-secondary ms-2">+</button>
+    
+                            </div>
+                            <p class="in-stock text-muted mt-2">In stock: 120</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <!-- <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>-->
+        <a href="#myCarousel" class="carousel-control-prev bg-light" role="button" data-bs-slide="prev" >
+            <span class="carousel-control-prev-icon" area-hidden="true"></span>
+            <span class="sr-only">prev</span>
+        </a>
+        <a href="#myCarousel" class="carousel-control-next bg-light" role="button" data-bs-slide="next">
+            <span class="sr-only">next</span>
+            <span class="carousel-control-next-icon"area-hidden="true"></span>
+        </a>
+
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+   
+<script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>

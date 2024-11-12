@@ -1,0 +1,90 @@
+.account-activity {
+    background-color: #2a2a2a; /* Dark background for the section */
+    color: #ffffff;
+    padding: 5px 0;
+}
+
+.account-activity h3
+ {
+    color: #ffffff;
+}
+.account-activity h5{
+    color: #000;
+}
+.order-card {
+    min-width: 200px;
+    background-color: #ffffff;
+    border: none;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.order-card h6 a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.order-card h6 a:hover {
+    text-decoration: underline;
+}
+
+.order-card .badge {
+    font-size: 0.75rem;
+    padding: 0.4em 0.6em;
+}
+
+.account-activity .card.bg-primary {
+    background-color: #003366;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.account-activity .card.bg-primary h4 {
+    font-size: 1.75rem;
+}
+
+.account-activity .card.bg-primary p {
+    margin: 0;
+}
+
+/**.recommended-section {
+    background-color: #333; /* Background color for the section 
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.product-card {
+    width: 220px; /* Width of each card 
+    position: relative;
+    background-color: #f8f9fa;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.product-card .card-img-top {
+    height: 120px;
+    object-fit: cover;
+}
+
+.product-card .badge {
+    font-size: 0.75rem;
+    padding: 0.3em 0.6em;
+}
+
+.product-card .price {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.quantity {
+    width: 40px;
+    height: 30px;
+    font-size: 1rem;
+}
+
+.in-stock {
+    font-size: 0.85rem;
+}**/

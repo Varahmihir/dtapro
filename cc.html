@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Bootstrap JS Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<style>
+    /* Carousel item styling */
+#recommendedCarousel .carousel-inner {
+    display: flex; /* Use flexbox to lay out carousel items side by side */
+    justify-content: center; /* Center the cards */
+    align-items: center; /* Vertically center the cards */
+}
+
+.product-card {
+    width: 200px; /* Set the fixed width of the card */
+    margin-right: 15px; /* Add some space between the cards */
+    transition: transform 0.3s ease; /* Add smooth transition effect */
+}
+
+/* Optional: Adding responsiveness */
+@media (max-width: 768px) {
+    .product-card {
+        width: 150px; /* Adjust card width on smaller screens */
+    }
+}
+
+</style>
+</head>
+<body>
+
+    <div id="recommendedCarousel" class="carouselslide"  data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- 1st card-->
+            <div class="shadow-lg p-3 carousel-item-active" data-bs-ride="carousel"  >
+               <div class=" product-card card me-3 active d-block " data-bs-slide-to="0" class="active" aria-current="true" aria-label="slide-1">
+                    <div class="badge bg-light position-absolute top-0 start-0 mb-2">Best seller</div>
+                    <img class="d-block w-100" width="100px" src="https://images.pexels.com/photos/557659/pexels-photo-557659.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-muted">#111</h6>
+                        <h4 class="card-title">Avacado</h4>
+                        <p class="price">₹23</p>
+                        <div class=" align-items-center">
+                            <button class="btn btn-outline-secondary me-2">-</button>
+                            <input type="text" class="form-control text-center quantity " style="width: 40px;" placeholder="0">
+                            <button class="btn btn-outline-secondary ms-2">+</button>
+
+                        </div>
+                        <p class="in-stock text-muted mt-2">In stock: 120</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 2nd card-->
+            <div class="carousel-item" data-bs-ride="carousel">
+                <div class="product-card card me-3 d-block" width="200px" aria-label="slide-2">
+                     <div class="badge bg-light position-absolute top-0 start-0 mb-2">Best seller</div>
+                     <img class="d-block w-100" width="100px" src="https://images.pexels.com/photos/557659/pexels-photo-557659.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                     <div class="card-body">
+                         <h6 class="card-subtitle mb-2 text-muted">#111</h6>
+                         <h4 class="card-title">Avacado</h4>
+                         <p class="price">₹23</p>
+                         <div class=" align-items-center">
+                             <button class="btn btn-outline-secondary me-2">-</button>
+                             <input type="text" class="form-control text-center quantity " style="width: 40px;" placeholder="0">
+                             <button class="btn btn-outline-secondary ms-2">+</button>
+ 
+                         </div>
+                         <p class="in-stock text-muted mt-2">In stock: 120</p>
+                     </div>
+                 </div>
+             </div>
+             <!-- 3rd card
+            <div class="carousel-item" data-bs-ride="carousel">
+                <div class="product-card card me-3 d-block" width="200px" aria-label="slide-3">
+                     <div class="badge bg-light position-absolute top-0 start-0 mb-2">Best seller</div>
+                     <img class="d-block w-100" width="100px" src="https://images.pexels.com/photos/557659/pexels-photo-557659.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                     <div class="card-body">
+                         <h6 class="card-subtitle mb-2 text-muted">#111</h6>
+                         <h4 class="card-title">Avacado</h4>
+                         <p class="price">₹23</p>
+                         <div class=" align-items-center">
+                             <button class="btn btn-outline-secondary me-2">-</button>
+                             <input type="text" class="form-control text-center quantity " style="width: 40px;" placeholder="0">
+                             <button class="btn btn-outline-secondary ms-2">+</button>
+ 
+                         </div>
+                         <p class="in-stock text-muted mt-2">In stock: 120</p>
+                     </div>
+                 </div>
+             </div>
+             <!-- 4th card
+            <div class="carousel-item" data-bs-ride="carousel">
+                <div class="product-card card me-3 d-block" width="200px" aria-label="slide-4">
+                     <div class="badge bg-light position-absolute top-0 start-0 mb-2">Best seller</div>
+                     <img class="d-block w-100" width="100px" src="https://images.pexels.com/photos/557659/pexels-photo-557659.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                     <div class="card-body">
+                         <h6 class="card-subtitle mb-2 text-muted">#111</h6>
+                         <h4 class="card-title">Avacado</h4>
+                         <p class="price">₹23</p>
+                         <div class=" align-items-center">
+                             <button class="btn btn-outline-secondary me-2">-</button>
+                             <input type="text" class="form-control text-center quantity " style="width: 40px;" placeholder="0">
+                             <button class="btn btn-outline-secondary ms-2">+</button>
+ 
+                         </div>
+                         <p class="in-stock text-muted mt-2">In stock: 120</p>
+                     </div>
+                 </div>
+             </div>
+             <!-- 5th card
+            <div class="carousel-item" data-bs-ride="100">
+                <div class="product-card card me-3 d-block" width="200px" aria-label="slide-5">
+                     <div class="badge bg-light position-absolute top-0 start-0 mb-2">Best seller</div>
+                     <img class="d-block w-100" width="100px" src="https://images.pexels.com/photos/557659/pexels-photo-557659.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                     <div class="card-body">
+                         <h6 class="card-subtitle mb-2 text-muted">#111</h6>
+                         <h4 class="card-title">Avacado</h4>
+                         <p class="price">₹23</p>
+                         <div class=" align-items-center">
+                             <button class="btn btn-outline-secondary me-2">-</button>
+                             <input type="text" class="form-control text-center quantity " style="width: 40px;" placeholder="0">
+                             <button class="btn btn-outline-secondary ms-2">+</button>
+ 
+                         </div>
+                         <p class="in-stock text-muted mt-2">In stock: 120</p>
+                     </div>
+                 </div>
+             </div>
+<!-- 2nd card
+<div class="carousel-item" data-bs-ride="carousel">
+    <div class="product-card card me-3 d-block" width="200px" aria-label="slide-2">
+         <div class="badge bg-light position-absolute top-0 start-0 mb-2">Best seller</div>
+         <img class="d-block w-100" width="100px" src="https://images.pexels.com/photos/557659/pexels-photo-557659.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+         <div class="card-body">
+             <h6 class="card-subtitle mb-2 text-muted">#111</h6>
+             <h4 class="card-title">Avacado</h4>
+             <p class="price">₹23</p>
+             <div class=" align-items-center">
+                 <button class="btn btn-outline-secondary me-2">-</button>
+                 <input type="text" class="form-control text-center quantity " style="width: 40px;" placeholder="0">
+                 <button class="btn btn-outline-secondary ms-2">+</button>
+
+             </div>
+             <p class="in-stock text-muted mt-2">In stock: 120</p>
+         </div>
+     </div>
+ </div>
+ <!-- 2nd card
+ <div class="carousel-item" data-bs-ride="carousel">
+    <div class="product-card card me-3 d-block" width="200px" aria-label="slide-2">
+         <div class="badge bg-light position-absolute top-0 start-0 mb-2">Best seller</div>
+         <img class="d-block w-100" width="100px" src="https://images.pexels.com/photos/557659/pexels-photo-557659.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+         <div class="card-body">
+             <h6 class="card-subtitle mb-2 text-muted">#111</h6>
+             <h4 class="card-title">Avacado</h4>
+             <p class="price">₹23</p>
+             <div class=" align-items-center">
+                 <button class="btn btn-outline-secondary me-2">-</button>
+                 <input type="text" class="form-control text-center quantity " style="width: 40px;" placeholder="0">
+                 <button class="btn btn-outline-secondary ms-2">+</button>
+
+             </div>
+             <p class="in-stock text-muted mt-2">In stock: 120</p>
+         </div>
+     </div>
+ </div>-->
+        </div>
+    </div>
+<!-- Carousel Controls -->
+<button class="carousel-control-prev" type="button" data-bs-target="#recommendedCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#recommendedCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+</button>
+
+
+        
+    </div>
+
+</body>
+</html>

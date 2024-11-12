@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce Header</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script>
+    
+            async function loadHTML(sectionId, filePath) {
+                const response = await fetch(filePath);
+                const content = await response.text();
+                document.getElementById(sectionId).innerHTML = content;
+            }
+        
+            loadHTML("cart", "cart.html");
+    </script>
+</head>
+<body>
+
+
+<header>
+    <div class="top-header bg-light py-2">
+        <div class="container d-flex align-items-center justify-content-between">
+            
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="https://shorturl.at/0n92a" alt="Logo" width="40" height="40">
+                <span class="ml-2">Entrée</span>
+            </a>
+
+            
+            <form class="form-inline search-bar d-flex flex-grow-1 mx-3">
+                <div class="input-group w-100">
+                    <div class="input-group-prepend">
+                        <select class="custom-select">
+                            <option selected>All Items</option>
+                            <option value="1">snacks</option>
+                            <option value="2">meals</option>
+                        </select>
+                    </div>
+                    <input type="text" class="form-control" placeholder="What can we help you find?">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="submit">
+                            <i class="fas fa-search"></i> 
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            
+            <div class="icons d-flex align-items-center">
+                <span>Ayush Kitchen-a1</span>
+                <i class="far fa-bell mx-3"></i> <!-- Notification Icon -->
+                <i class="far fa-user mx-3"></i> <!-- Account Icon -->
+                <i class="fas fa-shopping-cart mx-3"></i> <!-- Cart Icon -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="bottom-nav bg-dark py-2">
+        <div class="container d-flex align-items-center justify-content-between">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./Categories.html" target="_target">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Brands</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">My Lists</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="cart.html">My Order History</a>
+                </li>
+            </ul>
+            <button class="btn btn-warning">New Order</button>
+        </div>
+    </nav>
+</header>
+
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
