@@ -4,14 +4,21 @@
 header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+.ml-2{
+    color: #722F37;
+    font-family: 'Times New Roman', Times, serif;
+    padding-right: 3.9em;
+    
+}
 /* Top Header */
 .top-header .navbar-brand span {
-    font-weight: bold;
-    font-size: 1.25em;
+    
+    /* font-family: 'Dancing Script', cursive; */
+    font-size: 1.8em;
 }
 
 .search-bar .custom-select {
+    max-width: 150px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
@@ -19,6 +26,7 @@ header {
 .search-bar .form-control {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    max-width: 250px;
 }
 
 .icons i {
@@ -28,7 +36,7 @@ header {
 
 /* Bottom Navigation */
 .bottom-nav {
-    background-color: #001f54; /* Dark blue */
+    background-color: #722F37; /* Dark blue */
 }
 
 .bottom-nav .nav-link {
@@ -40,7 +48,7 @@ header {
 }
 
 .bottom-nav .btn-warning {
-    background-color: #ffcc00;
-    color: #001f54;
+    background-color:white;
+    color: #722F37;
     font-weight: bold;
 }
