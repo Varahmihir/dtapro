@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/item-list.css"
+</head>
+<body>
+
+<div class="container mt-5">
+    <!-- Product 1 -->
+    <div class="product-card">
+        <img src="assets/list1.jpg" alt="Vinous Indian Pair" class="product-img">
+        <div class="product-details">
+            <h5 class="product-name">Apothic Brew</h5>
+            <p class="product-description">The finest expression of India’s wine phenomenon bundled together in a wooden case, tells a great vinous story.</p>
+            <p class="price">₹ 2,295</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <span class="quantity-display">1</span>
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <a href="#" class="add-to-cart-btn">Add to Cart</a>
+        </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+        <img src="assets/list2.jpg" alt="King Cab" class="product-img">
+        <div class="product-details">
+            <h5 class="product-name">Groth</h5>
+            <p class="product-description">This wholesome, vegan red wine blends old world tradition and new world fruitiness to express a classic South African style.</p>
+            <p class="price">₹ 2,495</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <span class="quantity-display">1</span>
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <a href="#" class="add-to-cart-btn">Add to Cart</a>
+        </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+        <img src="assets/list3.jpg" alt="Chilled Weekend Pour" class="product-img">
+        <div class="product-details">
+            <h5 class="product-name">Septima Obra</h5>
+            <p class="product-description">Definitely one to unwind with, this South African white abounds with flavours of citrus and green apple.</p>
+            <p class="price">₹ 2,595</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <span class="quantity-display">1</span>
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <a href="#" class="add-to-cart-btn">Add to Cart</a>
+        </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-card">
+        <img src="assets/list4.jpg" alt="Chilled Weekend Pour" class="product-img">
+        <div class="product-details">
+            <h5 class="product-name">Caballero</h5>
+            <p class="product-description">"Discover the perfect bottle to elevate every moment, from timeless classics to hidden gems crafted with care."</p>
+            <p class="price">₹ 2,595</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <span class="quantity-display">1</span>
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <a href="#" class="add-to-cart-btn">Add to Cart</a>
+        </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="product-card">
+        <img src="assets/list5.jpg" alt="Chilled Weekend Pour" class="product-img">
+        <div class="product-details">
+            <h5 class="product-name">Savalan</h5>
+            <p class="product-description">Explore a curated selection of wines that bring elegance and flavor to life’s memorable moments.</p>
+            <p class="price">₹ 2,595</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <span class="quantity-display">1</span>
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <a href="#" class="add-to-cart-btn">Add to Cart</a>
+        </div>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="product-card">
+        <img src="assets/list7.jpg" alt="Chilled Weekend Pour" class="product-img">
+        <div class="product-details">
+            <h5 class="product-name">Columbia valley</h5>
+            <p class="product-description">Uncover exceptional wines that celebrate tradition, innovation, and unforgettable taste.</p>
+            <p class="price">₹ 2,595</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <span class="quantity-display">1</span>
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <a href="#" class="add-to-cart-btn">Add to Cart</a>
+        </div>
+    </div>
+
+    <!-- Product 7 -->
+    <div class="product-card">
+        <img src="assets/list8.jpg" alt="Chilled Weekend Pour" class="product-img">
+        <div class="product-details">
+            <h5 class="product-name">Mirassou</h5>
+            <p class="product-description">From bold reds to crisp whites, find your next favorite in our exquisite wine collection.</p>
+            <p class="price">₹ 2,595</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <span class="quantity-display">1</span>
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <a href="#" class="add-to-cart-btn">Add to Cart</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    function increaseQuantity(button) {
+        const quantityDisplay = button.previousElementSibling;
+        let quantity = parseInt(quantityDisplay.textContent);
+        quantityDisplay.textContent = quantity + 1;
+    }
+
+    function decreaseQuantity(button) {
+        const quantityDisplay = button.nextElementSibling;
+        let quantity = parseInt(quantityDisplay.textContent);
+        if (quantity > 1) {
+            quantityDisplay.textContent = quantity - 1;
+        }
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
