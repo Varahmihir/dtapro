@@ -1,48 +1,51 @@
-.footer {
-    background-color: #f8f9fa; /* Light background color */
-    color: #6c757d; /* Text color for footer */
+.footer-top {
+    background-color: #fcd116; /* Yellow background */
 }
 
-.footer h6 {
-    font-size: 0.875rem; /* Slightly smaller headings */
-    color: #343a40; /* Darker color for headings */
+.footer-top h6 {
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
-.footer a {
-    color: #6c757d; /* Light gray color for links */
-    text-decoration: none;
+.footer-middle {
+    background-color: #e9ecef; /* Light gray background */
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.footer a:hover {
-    color: #007bff; /* Bootstrap primary color on hover */
+.footer-middle h6 {
+    font-weight: bold;
 }
 
-.footer ul {
-    padding-left: 0; /* Remove default padding */
+.footer-middle ul {
+    padding: 0;
+    list-style-type: none;
 }
 
-.footer ul li {
-    margin-bottom: 0.5rem;
+.footer-middle ul li {
+    line-height: 1.6;
 }
 
-.footer ul.list-inline {
-    padding-left: 0; /* Remove padding for inline list */
+.footer-bottom {
+    background-color: #f8f9fa; /* Lighter background for bottom section */
+    border-top: 1px solid #dee2e6;
 }
 
-.footer ul.list-inline li {
-    margin-right: 0.5rem; /* Space between social icons */
+.social-icons i {
+    font-size: 1.2rem;
+    color: #333;
 }
 
-.footer .footer-bottom {
-    font-size: 0.8rem;
+.social-icons a {
+    color: inherit;
+    transition: color 0.3s ease;
 }
 
-.footer .btn-outline-primary {
-    border-color: #007bff;
-    color: #007bff;
+.social-icons a:hover {
+    color: #007bff; /* Change to a primary color on hover */
 }
 
-.footer .btn-outline-primary:hover {
-    background-color: #007bff;
-    color: white;
+.footer-bottom small {
+    font-size: 0.9rem;
+    color: #6c757d;
 }
