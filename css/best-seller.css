@@ -1,0 +1,64 @@
+.best-sellers-section {
+    text-align: center;
+    padding: 40px 0;
+  }
+  .best-sellers-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+  }
+  .best-sellers-title::before,
+  .best-sellers-title::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: #ccc;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .best-sellers-title::before {
+    left: -60px;
+  }
+  .best-sellers-title::after {
+    right: -60px;
+  }
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    margin-bottom: 20px;
+  }
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  .card img {
+    height: 250px;
+    object-fit: contain;
+    padding: 10px;
+  }
+  .card-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .card-price {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+  }
+  .add-to-cart-button {
+    background-color: #8b3f72;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .add-to-cart-button:hover {
+    background-color: #7a3464;
+    color: #fff;
+  }
