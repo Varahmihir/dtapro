@@ -1,0 +1,58 @@
+.gifting-section {
+    text-align: center;
+    padding: 40px 0;
+  }
+  .gifting-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+  }
+  .gifting-title::before,
+  .gifting-title::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: #ccc;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .gifting-title::before {
+    left: -60px;
+  }
+  .gifting-title::after {
+    right: -60px;
+  }
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+  }
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  .card img {
+    height: 250px;
+    object-fit: cover;
+  }
+  .card-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .browse-button {
+    background-color: #8b3f72;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+  }
+  .browse-button:hover {
+    background-color: #7a3464;
+    color: #fff;
+  }
