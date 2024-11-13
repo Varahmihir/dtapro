@@ -95,7 +95,17 @@
             background-color: #fd0707;
         }
         </style>
+        <script>
+            async function loadHTML(sectionId, filePath) {
+                const response = await fetch(filePath);
+                const content = await response.text();
+                document.getElementById(sectionId).innerHTML = content;
+            }
+        
+            loadHTML("header", "Header.html");
+          </script>
 </head>
+<div id="header"></div>
 <body style="background-image: url('./assets/stary.jpg'); background-repeat: no-repeat; background-size: cover;">
     <div class="contact-container">
         <h1>Contact Us</h1>
